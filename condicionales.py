@@ -45,3 +45,15 @@ elif b >= a and b >= c:
     print("El mayor es:",b)
 elif not (c<a or c<b):  
     print("El mayor es:",c)"""
+
+#calcula el precio final con un 10% de descuento si el total es mayor a 100
+n1=float(input("Escribe el total de la compra: "))
+if n1>100:
+    descuento = n1 * 0.10
+    precio_final = n1 - descuento   
+    print("El precio final es:", precio_final)
+elif n1== 100:
+    print("El precio final es:", n1)
+else:
+    print("No tienes descuento.")
+    print("El precio final es:", n1)
