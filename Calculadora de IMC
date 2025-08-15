@@ -1,0 +1,86 @@
+personas = []  
+
+cantidad1 = int(input("¿Cuántas personas vas a registrar? "))
+# Persona 1
+if cantidad1 >= 1:
+    nombre = input("Nombre: ")
+    peso = float(input("Peso en kilogramos: "))
+    estatura = float(input("Estatura en metros: "))
+    imc = peso / (estatura * estatura)
+    if imc < 18.5:
+        estado = "Bajo peso"
+    elif imc < 25:
+        estado = "Peso normal"
+    elif imc < 30:
+        estado = "Sobrepeso"
+    else:
+        estado = "Obesidad"   
+    persona = {
+        "nombre": nombre,
+        "peso": peso,
+        "estatura": estatura,
+        "imc": imc,
+        "estado": estado
+    }
+    personas.append(persona)
+
+# Persona 2
+if cantidad1 >= 2:
+    nombre = input("Nombre: ")
+    peso = float(input("Peso en kilogramos: "))
+    estatura = float(input("Estatura en metros: "))
+    imc = peso / (estatura * estatura)
+    if imc < 18.5:
+        estado = "Bajo peso"
+    elif imc < 25:
+        estado = "Peso normal"
+    elif imc < 30:
+        estado = "Sobrepeso"
+    else:
+        estado = "Obesidad"
+    persona = {
+        "nombre": nombre,
+        "peso": peso,
+        "estatura": estatura,
+        "imc": imc,
+        "estado": estado
+    }
+    personas.append(persona)
+
+# Persona 3
+if cantidad1 >= 3:
+    nombre = input("Nombre: ")
+    peso = float(input("Peso en kilogramos: "))
+    estatura = float(input("Estatura en metros: "))
+    imc = peso / (estatura * estatura)
+    if imc < 18.5:
+        estado = "Bajo peso"
+    elif imc < 25:
+        estado = "Peso normal"
+    elif imc < 30:
+        estado = "Sobrepeso"
+    else:
+        estado = "Obesidad"
+    persona = {
+        "nombre": nombre,
+        "peso": peso,
+        "estatura": estatura,
+        "imc": imc,
+        "estado": estado
+    }
+    personas.append(persona)
+
+if cantidad1 >= 1:
+    print("Nombre:", personas[0]['nombre'])
+    print("IMC:", personas[0]['imc'])
+    print("Estado:", personas[0]['estado'])
+
+if cantidad1 >= 2:
+    print("Nombre:", personas[1]['nombre'])
+    print("IMC:", personas[1]['imc'])
+    print("Estado:", personas[1]['estado'])
+
+if cantidad1 >= 3:
+    print("Nombre:", personas[2]['nombre'])
+    print("IMC:", personas[2]['imc'])
+    print("Estado:", personas[2]['estado'])
